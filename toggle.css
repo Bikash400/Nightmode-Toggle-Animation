@@ -1,0 +1,66 @@
+body{font-family: sans-serif;transition: 1.2s;}
+.dark{
+    background-color: black;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.toggle{
+    width:90px;
+    height:40px;
+    /* background-color: rgb(199, 199, 199); */
+    background-color: rgb(110, 110, 255);
+    border-radius: 30px;
+    position: relative;
+    border: 1px solid rgb(194, 194, 194);
+    cursor: pointer;
+}
+
+.switch{
+    position: absolute;
+    width:40px;
+    height: 100%;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    left:55%;
+    right:0;
+    transition:left 1s, right 1s;
+}
+.toggle:hover{
+    background-color: rgba(110, 110, 255, 0.87);
+}
+.toggle:hover .switch{
+    background-color: rgb(236, 236, 236);
+}
+
+.switch .icon{
+    font-size: 28px;
+    color: white;
+    transition: .4s;
+}
+.switch .icon-color{color:rgb(110, 110, 255);}
+
+.toggle.night{
+    background-color: rgb(78, 78, 78);
+    border-color: rgb(36, 36, 36);
+}
+.toggle.night:hover{
+    background-color: rgb(85, 85, 85);
+}
+
+.toggle.night:hover .switch{
+    background-color: rgb(29, 29, 29);
+}
+.switch.toggledNight{
+    left:0;
+    background-color: black;
+}
+
+

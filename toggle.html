@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="toggle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="toggle">
+                <div class="switch">
+                    <span class="icon icon-color">&#9728;</span>
+                </div>
+            </div>
+        </div>
+
+
+        <script>
+            let isNightMode=false;
+            const body=document.querySelector("body");
+            const icon=document.querySelector(".switch .icon")
+            const toggle= document.querySelector(".toggle");
+            const switchBtn = document.querySelector(".toggle .switch");
+            toggle.addEventListener("click",() =>{
+                isNightMode=!isNightMode;
+                if(isNightMode){
+                    icon.style.opacity=0;
+                    setTimeout(()=>{
+                        icon.innerHTML="&#9789";
+                        icon.style.opacity=1;
+                    },300)
+                }else{
+                    icon.style.opacity=0;
+                    setTimeout(()=>{
+                        icon.innerHTML="&#9728";
+                        icon.style.opacity=1;
+                    },300)
+                }
+                toggle.classList.toggle("night");
+                switchBtn.classList.toggle("toggledNight");
+                body.classList.toggle("dark");
+                icon.classList.toggle("icon-color");
+            })
+        </script>
+    </body>   
+</html>

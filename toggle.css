@@ -28,6 +28,7 @@ body{font-family: sans-serif;transition: 1.2s;}
     background-color: white;
     display: flex;
     justify-content: center;
+    align-items: center;
     cursor: pointer;
     left:55%;
     right:0;

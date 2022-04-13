@@ -8,13 +8,13 @@
                 if(isNightMode){
                     icon.style.opacity=0;
                     setTimeout(()=>{
-                        icon.innerHTML="&#9789";
+                        icon.innerHTML="brightness_2";
                         icon.style.opacity=1;
                     },300)
                 }else{
                     icon.style.opacity=0;
                     setTimeout(()=>{
-                        icon.innerHTML="&#9728";
+                        icon.innerHTML="wb_sunny";
                         icon.style.opacity=1;
                     },300)
                 }

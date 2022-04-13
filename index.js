@@ -1,4 +1,4 @@
- let isNightMode=false;
+       let isNightMode=false;
             const body=document.querySelector("body");
             const icon=document.querySelector(".switch .icon")
             const toggle= document.querySelector(".toggle");
